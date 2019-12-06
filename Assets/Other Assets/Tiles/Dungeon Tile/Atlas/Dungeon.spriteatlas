@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Dungeon
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 0
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 1
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+    - {fileID: 2800000, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+    totalSpriteSurfaceArea: 7680
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300060, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300054, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300052, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300058, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300056, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300044, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300046, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300040, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300042, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300036, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300038, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300032, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300034, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300048, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 21300050, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
+  - {fileID: 8136546645395415350, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -3883688513442960037, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: 8913636098749012467, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: 8563510324852147506, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -5637325260074351914, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -2291051808923680580, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -4291671825178418677, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: 2892641421376034386, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: 8019855291009072983, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -9220277076374015887, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: 6462132547261668030, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -8765304386393073496, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -5906072198818344032, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -5806929966814472236, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  - {fileID: -8413283540799995095, guid: c0787fd0067f30c42ba49c9dfa88aaa2, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - dungeon_14
+  - dungeon_11
+  - dungeon_10
+  - dungeon_13
+  - dungeon_12
+  - dungeon_6
+  - dungeon_7
+  - dungeon_4
+  - dungeon_5
+  - dungeon_2
+  - dungeon_3
+  - dungeon_0
+  - dungeon_1
+  - dungeon_8
+  - dungeon_9
+  - dungeon - Copy_13
+  - dungeon - Copy_12
+  - dungeon - Copy_11
+  - dungeon - Copy_10
+  - dungeon - Copy_14
+  - dungeon - Copy_8
+  - dungeon - Copy_9
+  - dungeon - Copy_0
+  - dungeon - Copy_1
+  - dungeon - Copy_2
+  - dungeon - Copy_3
+  - dungeon - Copy_4
+  - dungeon - Copy_5
+  - dungeon - Copy_6
+  - dungeon - Copy_7
+  m_Tag: Dungeon
+  m_IsVariant: 0
