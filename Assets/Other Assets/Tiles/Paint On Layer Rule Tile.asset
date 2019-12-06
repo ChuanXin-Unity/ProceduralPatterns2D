@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Paint On Layer Rule Tile
   m_EditorClassIdentifier: Assembly-CSharp::PaintOnLayerRuleTile
-  m_DefaultSprite: {fileID: 6462132547261668030, guid: c0787fd0067f30c42ba49c9dfa88aaa2,
-    type: 3}
+  m_DefaultSprite: {fileID: 21300032, guid: 5c4f1fa01d076b0448a9438531d30a91, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:
