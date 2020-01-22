@@ -138,6 +138,7 @@ public class LevelGeneratorStack : MonoBehaviour
 	}
 }
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(LevelGeneratorStack))]
 public class LevelGeneratorStackEditor : Editor
 {
@@ -180,3 +181,4 @@ public class LevelGeneratorStackEditor : Editor
 		}
 	}
 }
+#endif
