@@ -6,34 +6,53 @@ using UnityEngine.Tilemaps;
 [RequireComponent(typeof(Tilemap))]
 public class FoilageAddTileLayer : MonoBehaviour
 {
-    private List<Vector3Int> positionList;
-    private Tilemap tilemap;
-
-    void Start()
+    private struct AddUpdateData
     {
-        positionList = new List<Vector3Int>();
-        tilemap = GetComponent<Tilemap>();
+        public Vector3Int position;
+        public PaintOnLayerRuleTile tile;
+    }
+    private List<AddUpdateData> updateList = new List<AddUpdateData>();
+    private Tilemap baseTilemap;
+
+    public Tilemap paintTilemap = null;
+
+    void Awake()
+    {
+        baseTilemap = GetComponent<Tilemap>();
+        if (paintTilemap == null)
+            paintTilemap = baseTilemap;
     }
 
-    public void AddUpdate(Vector3Int position)
+    public void AddUpdate(Vector3Int position, PaintOnLayerRuleTile tile)
     {
-        positionList.Add(position);
+        updateList.Add(new AddUpdateData() { position = position, tile = tile });
     }
 
     public void LateUpdate()
     {
-        foreach (var position in positionList)
+        foreach (var update in updateList)
         {
-            var tile = tilemap.GetTile<PaintOnLayerRuleTile>(position);
+            if (update.tile == null)
+                continue;
+
+            var tile = baseTilemap.GetTile<PaintOnLayerRuleTile>(update.position);
             if (tile != null)
             {
-                foreach (var paintTile in tile.paintTileList)
+                foreach (var paintTile in update.tile.paintTileList)
                 {
-                    if (!tilemap.HasTile(position + paintTile.offset))
-                        tilemap.SetTile(position + paintTile.offset, paintTile.paintTile);
+                    if (!baseTilemap.HasTile(update.position + paintTile.offset))
+                        paintTilemap.SetTile(update.position + paintTile.offset, paintTile.paintTile);
+                }
+            }
+            else if (baseTilemap != paintTilemap && !baseTilemap.HasTile(update.position))
+            {
+                foreach (var paintTile in update.tile.paintTileList)
+                {
+                    if (paintTilemap.HasTile(update.position + paintTile.offset))
+                        paintTilemap.SetTile(update.position + paintTile.offset, null);
                 }
             }
         }
-        positionList.Clear();
+        updateList.Clear();
     }
 }

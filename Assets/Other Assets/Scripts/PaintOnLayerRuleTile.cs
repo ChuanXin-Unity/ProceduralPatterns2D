@@ -23,6 +23,16 @@ public class PaintOnLayerRuleTile : RuleTile<PaintOnLayerRuleTile.Neighbor>
         base.RefreshTile(location, tilemap);
         var foilageLayer = tilemap.GetComponent<FoilageAddTileLayer>();
         if (foilageLayer != null)
-            foilageLayer.AddUpdate(location);
+        {
+            for (int y = -1; y < 2; ++y)
+            {
+                for (int x = -1; x < 2; ++x)
+                {
+                    var neighbour = new Vector3Int(location.x + x, location.y + y, location.z);
+                    if (neighbour == location || tilemap.GetTile(neighbour) == this)
+                        foilageLayer.AddUpdate(neighbour, this);
+                }
+            }
+        }
     }
 }
