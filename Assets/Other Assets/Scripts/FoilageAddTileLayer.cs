@@ -43,6 +43,8 @@ public class FoilageAddTileLayer : MonoBehaviour
                     if (!baseTilemap.HasTile(update.position + paintTile.offset))
                         paintTilemap.SetTile(update.position + paintTile.offset, paintTile.paintTile);
                 }
+                if (baseTilemap != paintTilemap && paintTilemap.HasTile(update.position))
+                    paintTilemap.SetTile(update.position, null);
             }
             else if (baseTilemap != paintTilemap && !baseTilemap.HasTile(update.position))
             {
